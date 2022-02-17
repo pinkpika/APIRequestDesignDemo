@@ -9,6 +9,13 @@ import Foundation
 
 /// API 管理者
 struct APIManager{
+    
     static let shared = APIManager()
     private init(){}
+    
+    enum APIManagerError: Error{
+        case requestError(error: Error)
+        case nilData
+        case decodeError
+    }
 }

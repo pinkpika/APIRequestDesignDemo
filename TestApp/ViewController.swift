@@ -30,5 +30,15 @@ class ViewController: UIViewController {
                 print(error)
             }
         }
+        
+        APIManager.shared.requestHttpBinPost {
+            result in
+            switch result{
+            case .success(let response):
+                print(response)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }
