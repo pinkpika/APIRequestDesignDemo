@@ -8,7 +8,7 @@
 import Foundation
 
 /// API 管理者
-struct APIManager{
+class APIManager{
     
     static let shared = APIManager()
     private init(){}

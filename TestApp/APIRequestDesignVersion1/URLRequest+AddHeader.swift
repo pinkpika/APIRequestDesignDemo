@@ -16,12 +16,6 @@ extension URLRequest{
     }
     
     @discardableResult
-    mutating func addHeaderAcceptJson() -> URLRequest{
-        self.addValue("application/json", forHTTPHeaderField: "accept")
-        return self
-    }
-    
-    @discardableResult
     mutating func addHeaderContentTypeJson() -> URLRequest{
         self.addValue("application/json", forHTTPHeaderField: "Content-Type")
         return self
