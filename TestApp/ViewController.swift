@@ -32,6 +32,14 @@ class ViewController: UIViewController {
         button.setTitle("APIRequestDesignVersion2 call apis", for: .normal)
         button.addAction(UIAction(handler: {
             action in
+            HttpBinGetRequest().setData(value: "wwww1").send {
+                (result: Result<HttpBinGetResponse,NetworkManager.NetworkManagerError>) in
+                print(result)
+            }
+            HttpBinPostRequest().setData(value: "wwww2").send {
+                (result: Result<HttpBinPostResponse,NetworkManager.NetworkManagerError>) in
+                print(result)
+            }
         }), for: .touchUpInside)
         return button
     }()
