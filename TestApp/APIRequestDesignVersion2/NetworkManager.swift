@@ -65,13 +65,13 @@ extension NetworkManager{
     
     /// 發送 Get 請求
     func sendGetRequest<T: Decodable>(urlString: String,
-                                      parameters: [String: Any],
+                                      queryItems: [String: Any],
                                       timeoutInterval: TimeInterval,
                                       completion: @escaping ((Result<T,NetworkManagerError>) -> Void)) -> URLSessionDataTask?{
         
         // 組成 Request
         guard var urlComponents = URLComponents(string: urlString) else { return nil }
-        urlComponents.queryItems = convertParameters(parameters: parameters).map { URLQueryItem(name: $0.key, value: $0.value) }
+        urlComponents.queryItems = convertParameters(parameters: queryItems).map { URLQueryItem(name: $0.key, value: $0.value) }
         guard let url = urlComponents.url else { return nil }
         var request = URLRequest(url: url)
         request.httpMethod = "GET"

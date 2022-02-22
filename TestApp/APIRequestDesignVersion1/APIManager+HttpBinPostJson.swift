@@ -19,7 +19,7 @@ extension APIManager{
         let url: String
     }
 
-    func requestHttpBinPostJson(completion: @escaping ((Result<HttpBinPostJsonResponse,APIManagerError>) -> Void)){
+    func requestHttpBinPostJson(value: String, completion: @escaping ((Result<HttpBinPostJsonResponse,APIManagerError>) -> Void)){
         
         // TODO: Part1 組合 Request，使用方法或擴充封裝類似的邏輯
         guard let url = URL(string: "https://httpbin.org/post") else { return }
@@ -29,7 +29,7 @@ extension APIManager{
         request.addHeaderContentTypeJson()
         request.httpBody = """
         {
-            "value": "我是資料"
+            "value": "\(value)"
         }
         """.data(using: .utf8)
         
@@ -37,7 +37,7 @@ extension APIManager{
         let dataTask = URLSession.shared.dataTask(with: request) {
             data, response, error in
             
-            // TODO: - Part3 處理 Response，使用方法或擴充封裝類似的邏輯
+            // TODO: Part3 處理 Response，使用方法或擴充封裝類似的邏輯
             self.handleResponse(data: data, response: response, error: error, completion: completion)
         }
         dataTask.resume()

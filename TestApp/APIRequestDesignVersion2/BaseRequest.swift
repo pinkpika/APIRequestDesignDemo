@@ -40,7 +40,7 @@ class BaseRequest{
         let urlString = domain + path
         switch method {
         case .get:
-            return NetworkManager.shared.sendGetRequest(urlString: urlString, parameters: getParameters(), timeoutInterval: timeoutInterval, completion: completion)
+            return NetworkManager.shared.sendGetRequest(urlString: urlString, queryItems: getParameters(), timeoutInterval: timeoutInterval, completion: completion)
         case .post where contentType == .urlencoded:
             return NetworkManager.shared.sendPostUrlEncodedRequest(urlString: urlString, urlEncodedParas: getParameters(), timeoutInterval: timeoutInterval, completion: completion)
         case .post where contentType == .json:

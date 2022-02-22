@@ -20,10 +20,10 @@ extension APIManager{
         let url: String
     }
 
-    func requestHttpBinGet(completion: @escaping ((Result<HttpBinGetResponse,APIManagerError>) -> Void)){
+    func requestHttpBinGet(value: String, completion: @escaping ((Result<HttpBinGetResponse,APIManagerError>) -> Void)){
         
         // TODO: Part1 組合 Request，使用方法或擴充封裝類似的邏輯
-        guard let url = URL(string: "https://httpbin.org/get?value=1") else { return }
+        guard let url = URL(string: "https://httpbin.org/get?value=\(value)") else { return }
         var request = URLRequest(url: url)
         request.method = .get
         request.addHeaderAuthToken()

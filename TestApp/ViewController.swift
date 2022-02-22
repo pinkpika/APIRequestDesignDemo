@@ -14,13 +14,13 @@ class ViewController: UIViewController {
         button.setTitle("APIRequestDesignVersion1 call apis", for: .normal)
         button.addAction(UIAction(handler: {
             action in
-            APIManager.shared.requestHttpBinGet {
+            APIManager.shared.requestHttpBinGet(value: "xxxx1") {
                 result in print(result)
             }
-            APIManager.shared.requestHttpBinPostUrlEncoded {
+            APIManager.shared.requestHttpBinPostUrlEncoded(value: "xxxx2") {
                 result in print(result)
             }
-            APIManager.shared.requestHttpBinPostJson {
+            APIManager.shared.requestHttpBinPostJson(value: "xxxx3") {
                 result in print(result)
             }
         }), for: .touchUpInside)
