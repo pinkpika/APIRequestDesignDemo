@@ -1,5 +1,5 @@
 //
-//  APIManager+HttpBinPost.swift
+//  APIManager+HttpBinPostJson.swift
 //  TestApp
 //
 //  Created by cm0620 on 2022/2/17.
@@ -10,7 +10,7 @@ import Foundation
 // MARK: - HttpBin(https://httpbin.org/#/HTTP_Methods)
 extension APIManager{
 
-    struct HttpBinPostResponse: Codable{
+    struct HttpBinPostJsonResponse: Codable{
         struct JsonData: Codable{
             let value: String
         }
@@ -19,7 +19,7 @@ extension APIManager{
         let url: String
     }
 
-    func requestHttpBinPost(completion: @escaping ((Result<HttpBinPostResponse,APIManagerError>) -> Void)){
+    func requestHttpBinPostJson(completion: @escaping ((Result<HttpBinPostJsonResponse,APIManagerError>) -> Void)){
         
         // TODO: Part1 組合 Request，使用方法或擴充封裝類似的邏輯
         guard let url = URL(string: "https://httpbin.org/post") else { return }

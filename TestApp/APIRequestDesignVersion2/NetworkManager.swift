@@ -33,6 +33,9 @@ class NetworkManager{
             completion(.failure(.requestError(error: error)))
             return
         }
+        if let statusCode = (response as? HTTPURLResponse)?.statusCode{
+            print(statusCode)
+        }
         guard let data = data else {
             completion(.failure(.nilData))
             return

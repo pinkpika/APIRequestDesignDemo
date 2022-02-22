@@ -14,13 +14,13 @@ class ViewController: UIViewController {
         button.setTitle("APIRequestDesignVersion1 call apis", for: .normal)
         button.addAction(UIAction(handler: {
             action in
-            APIManager.shared.requestHttpBinGetByURLSession {
+            APIManager.shared.requestHttpBinGet {
                 result in print(result)
             }
-            APIManager.shared.requestHttpBinGetByAlamofire {
+            APIManager.shared.requestHttpBinPostUrlEncoded {
                 result in print(result)
             }
-            APIManager.shared.requestHttpBinPost {
+            APIManager.shared.requestHttpBinPostJson {
                 result in print(result)
             }
         }), for: .touchUpInside)
@@ -36,8 +36,12 @@ class ViewController: UIViewController {
                 (result: Result<HttpBinGetResponse,NetworkManager.NetworkManagerError>) in
                 print(result)
             }
-            HttpBinPostRequest().setData(value: "wwww2").send {
-                (result: Result<HttpBinPostResponse,NetworkManager.NetworkManagerError>) in
+            HttpBinPostUrlEncodedRequest().setData(value: "wwww2").send {
+                (result: Result<HttpBinPostUrlEncodedResponse,NetworkManager.NetworkManagerError>) in
+                print(result)
+            }
+            HttpBinPostJsonRequest().setData(value: "wwww3").send {
+                (result: Result<HttpBinPostJsonResponse,NetworkManager.NetworkManagerError>) in
                 print(result)
             }
         }), for: .touchUpInside)

@@ -1,5 +1,5 @@
 //
-//  HttpBinGetRequest.swift
+//  HttpBinGetRequest+Response.swift
 //  TestApp
 //
 //  Created by cm0620 on 2022/2/21.

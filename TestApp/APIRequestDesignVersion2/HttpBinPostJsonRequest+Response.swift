@@ -1,5 +1,5 @@
 //
-//  HttpBinPostRequest.swift
+//  HttpBinPostJsonRequest+Response.swift
 //  TestApp
 //
 //  Created by cm0620 on 2022/2/21.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class HttpBinPostRequest: HttpBinBaseRequest{
+class HttpBinPostJsonRequest: HttpBinBaseRequest{
     
     override var path: String {
         return "post"
@@ -29,11 +29,11 @@ class HttpBinPostRequest: HttpBinBaseRequest{
     }
 }
 
-struct HttpBinPostResponse: Codable{
-    struct JsonData: Codable{
+struct HttpBinPostUrlEncodedResponse: Codable{
+    struct Form: Codable{
         let value: String
     }
-    let json: JsonData
+    let form: Form
     let origin: String
     let url: String
 }
