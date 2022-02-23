@@ -20,6 +20,31 @@
 		937E8021279FECC300A1AA90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937E801F279FECC300A1AA90 /* Main.storyboard */; };
 		937E8023279FECC500A1AA90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937E8022279FECC500A1AA90 /* Assets.xcassets */; };
 		937E8026279FECC500A1AA90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937E8024279FECC500A1AA90 /* LaunchScreen.storyboard */; };
+		9386941127C5E6A60098059B /* HttpBinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386941027C5E6A60098059B /* HttpBinService.swift */; };
+		9386941327C5E7D80098059B /* ApiComponentSendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386941227C5E7D80098059B /* ApiComponentSendable.swift */; };
+		9386941727C5E9390098059B /* ApiComponentError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386941627C5E9390098059B /* ApiComponentError.swift */; };
+		9386941B27C5F6420098059B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386941A27C5F6420098059B /* Request.swift */; };
+		9386941F27C5F7950098059B /* RequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386941E27C5F7950098059B /* RequestAdapter.swift */; };
+		9386942127C5F7EC0098059B /* Decision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386942027C5F7EC0098059B /* Decision.swift */; };
+		9386942327C5F8E30098059B /* DecisionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386942227C5F8E30098059B /* DecisionAction.swift */; };
+		9386942527C5F9520098059B /* DecisionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386942427C5F9520098059B /* DecisionRecord.swift */; };
+		9386942727C606DF0098059B /* GetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386942627C606DF0098059B /* GetRequest.swift */; };
+		9386942927C608B40098059B /* PostJsonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386942827C608B40098059B /* PostJsonRequest.swift */; };
+		9386942B27C608C20098059B /* PostUrlEncodedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386942A27C608C20098059B /* PostUrlEncodedRequest.swift */; };
+		9386942D27C60C4A0098059B /* PathAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386942C27C60C4A0098059B /* PathAdapter.swift */; };
+		9386942F27C60C610098059B /* AnyAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386942E27C60C610098059B /* AnyAdapter.swift */; };
+		9386943127C611000098059B /* HTTPMethodAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386943027C611000098059B /* HTTPMethodAdapter.swift */; };
+		9386943327C6114B0098059B /* ContentTypeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386943227C6114B0098059B /* ContentTypeAdapter.swift */; };
+		9386943527C6118C0098059B /* QueryParamsAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386943427C6118C0098059B /* QueryParamsAdapter.swift */; };
+		9386943727C611AF0098059B /* UrlFormBodyParamsAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386943627C611AF0098059B /* UrlFormBodyParamsAdapter.swift */; };
+		9386943927C612F40098059B /* JsonBodyParamsAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386943827C612F40098059B /* JsonBodyParamsAdapter.swift */; };
+		9386943B27C613590098059B /* ParseResultDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386943A27C613590098059B /* ParseResultDecision.swift */; };
+		9386943D27C61BDB0098059B /* HttpBinService+HttpBinGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386943C27C61BDB0098059B /* HttpBinService+HttpBinGet.swift */; };
+		9386943F27C61C020098059B /* HttpBinService+HttpBinPostUrlEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386943E27C61C020098059B /* HttpBinService+HttpBinPostUrlEncoded.swift */; };
+		9386944127C61C0B0098059B /* HttpBinService+HttpBinPostJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386944027C61C0B0098059B /* HttpBinService+HttpBinPostJson.swift */; };
+		9386944427C61E050098059B /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386944327C61E050098059B /* ApiClient.swift */; };
+		9386944627C624AE0098059B /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386944527C624AE0098059B /* ContentType.swift */; };
+		9386944827C624C00098059B /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386944727C624C00098059B /* HTTPMethod.swift */; };
 		939D0E2F27A246E60054157D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 939D0E2E27A246E60054157D /* Alamofire */; };
 		939D202F27C4845900A21D43 /* APIManager+HttpBinPostUrlEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939D202E27C4845900A21D43 /* APIManager+HttpBinPostUrlEncoded.swift */; };
 		939D203127C486B100A21D43 /* HttpBinPostUrlEncodedRequest+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939D203027C486B100A21D43 /* HttpBinPostUrlEncodedRequest+Response.swift */; };
@@ -43,6 +68,31 @@
 		937E8022279FECC500A1AA90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		937E8025279FECC500A1AA90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		937E8027279FECC500A1AA90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9386941027C5E6A60098059B /* HttpBinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpBinService.swift; sourceTree = "<group>"; };
+		9386941227C5E7D80098059B /* ApiComponentSendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiComponentSendable.swift; sourceTree = "<group>"; };
+		9386941627C5E9390098059B /* ApiComponentError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiComponentError.swift; sourceTree = "<group>"; };
+		9386941A27C5F6420098059B /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		9386941E27C5F7950098059B /* RequestAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAdapter.swift; sourceTree = "<group>"; };
+		9386942027C5F7EC0098059B /* Decision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decision.swift; sourceTree = "<group>"; };
+		9386942227C5F8E30098059B /* DecisionAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionAction.swift; sourceTree = "<group>"; };
+		9386942427C5F9520098059B /* DecisionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionRecord.swift; sourceTree = "<group>"; };
+		9386942627C606DF0098059B /* GetRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequest.swift; sourceTree = "<group>"; };
+		9386942827C608B40098059B /* PostJsonRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostJsonRequest.swift; sourceTree = "<group>"; };
+		9386942A27C608C20098059B /* PostUrlEncodedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUrlEncodedRequest.swift; sourceTree = "<group>"; };
+		9386942C27C60C4A0098059B /* PathAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathAdapter.swift; sourceTree = "<group>"; };
+		9386942E27C60C610098059B /* AnyAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyAdapter.swift; sourceTree = "<group>"; };
+		9386943027C611000098059B /* HTTPMethodAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethodAdapter.swift; sourceTree = "<group>"; };
+		9386943227C6114B0098059B /* ContentTypeAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTypeAdapter.swift; sourceTree = "<group>"; };
+		9386943427C6118C0098059B /* QueryParamsAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryParamsAdapter.swift; sourceTree = "<group>"; };
+		9386943627C611AF0098059B /* UrlFormBodyParamsAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlFormBodyParamsAdapter.swift; sourceTree = "<group>"; };
+		9386943827C612F40098059B /* JsonBodyParamsAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonBodyParamsAdapter.swift; sourceTree = "<group>"; };
+		9386943A27C613590098059B /* ParseResultDecision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseResultDecision.swift; sourceTree = "<group>"; };
+		9386943C27C61BDB0098059B /* HttpBinService+HttpBinGet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpBinService+HttpBinGet.swift"; sourceTree = "<group>"; };
+		9386943E27C61C020098059B /* HttpBinService+HttpBinPostUrlEncoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpBinService+HttpBinPostUrlEncoded.swift"; sourceTree = "<group>"; };
+		9386944027C61C0B0098059B /* HttpBinService+HttpBinPostJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpBinService+HttpBinPostJson.swift"; sourceTree = "<group>"; };
+		9386944327C61E050098059B /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		9386944527C624AE0098059B /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
+		9386944727C624C00098059B /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		939D202E27C4845900A21D43 /* APIManager+HttpBinPostUrlEncoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIManager+HttpBinPostUrlEncoded.swift"; sourceTree = "<group>"; };
 		939D203027C486B100A21D43 /* HttpBinPostUrlEncodedRequest+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpBinPostUrlEncodedRequest+Response.swift"; sourceTree = "<group>"; };
 		93B5EFBD27BDE9B900DCD5FA /* URLRequest+AddHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+AddHeader.swift"; sourceTree = "<group>"; };
@@ -107,6 +157,7 @@
 			children = (
 				3FB32B8B27BAC18D00B92458 /* APIRequestDesignVersion1 */,
 				3FA4C32827C416310003407F /* APIRequestDesignVersion2 */,
+				9386940C27C5E62F0098059B /* APIRequestDesignVersion3 */,
 				937E8019279FECC300A1AA90 /* AppDelegate.swift */,
 				937E801B279FECC300A1AA90 /* SceneDelegate.swift */,
 				937E801D279FECC300A1AA90 /* ViewController.swift */,
@@ -116,6 +167,86 @@
 				937E8027279FECC500A1AA90 /* Info.plist */,
 			);
 			path = TestApp;
+			sourceTree = "<group>";
+		};
+		9386940C27C5E62F0098059B /* APIRequestDesignVersion3 */ = {
+			isa = PBXGroup;
+			children = (
+				9386940D27C5E6670098059B /* Component */,
+				9386940E27C5E6700098059B /* Service */,
+			);
+			path = APIRequestDesignVersion3;
+			sourceTree = "<group>";
+		};
+		9386940D27C5E6670098059B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				9386941C27C5F7310098059B /* Adapter */,
+				9386941D27C5F73B0098059B /* Decision */,
+				9386941827C5F6170098059B /* Request */,
+				9386944327C61E050098059B /* ApiClient.swift */,
+				9386941227C5E7D80098059B /* ApiComponentSendable.swift */,
+				9386941627C5E9390098059B /* ApiComponentError.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		9386940E27C5E6700098059B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9386940F27C5E6890098059B /* HttpBinService */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9386940F27C5E6890098059B /* HttpBinService */ = {
+			isa = PBXGroup;
+			children = (
+				9386941027C5E6A60098059B /* HttpBinService.swift */,
+				9386943C27C61BDB0098059B /* HttpBinService+HttpBinGet.swift */,
+				9386943E27C61C020098059B /* HttpBinService+HttpBinPostUrlEncoded.swift */,
+				9386944027C61C0B0098059B /* HttpBinService+HttpBinPostJson.swift */,
+			);
+			path = HttpBinService;
+			sourceTree = "<group>";
+		};
+		9386941827C5F6170098059B /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				9386944727C624C00098059B /* HTTPMethod.swift */,
+				9386944527C624AE0098059B /* ContentType.swift */,
+				9386941A27C5F6420098059B /* Request.swift */,
+				9386942627C606DF0098059B /* GetRequest.swift */,
+				9386942A27C608C20098059B /* PostUrlEncodedRequest.swift */,
+				9386942827C608B40098059B /* PostJsonRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		9386941C27C5F7310098059B /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				9386941E27C5F7950098059B /* RequestAdapter.swift */,
+				9386942E27C60C610098059B /* AnyAdapter.swift */,
+				9386942C27C60C4A0098059B /* PathAdapter.swift */,
+				9386943027C611000098059B /* HTTPMethodAdapter.swift */,
+				9386943227C6114B0098059B /* ContentTypeAdapter.swift */,
+				9386943427C6118C0098059B /* QueryParamsAdapter.swift */,
+				9386943627C611AF0098059B /* UrlFormBodyParamsAdapter.swift */,
+				9386943827C612F40098059B /* JsonBodyParamsAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		9386941D27C5F73B0098059B /* Decision */ = {
+			isa = PBXGroup;
+			children = (
+				9386942027C5F7EC0098059B /* Decision.swift */,
+				9386942227C5F8E30098059B /* DecisionAction.swift */,
+				9386942427C5F9520098059B /* DecisionRecord.swift */,
+				9386943A27C613590098059B /* ParseResultDecision.swift */,
+			);
+			path = Decision;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,20 +326,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9386942F27C60C610098059B /* AnyAdapter.swift in Sources */,
+				9386941327C5E7D80098059B /* ApiComponentSendable.swift in Sources */,
 				3FB32B8F27BAC25200B92458 /* APIManager.swift in Sources */,
 				3FA4C33027C416310003407F /* HttpBinGetRequest+Response.swift in Sources */,
+				9386943927C612F40098059B /* JsonBodyParamsAdapter.swift in Sources */,
 				939D203127C486B100A21D43 /* HttpBinPostUrlEncodedRequest+Response.swift in Sources */,
 				939D202F27C4845900A21D43 /* APIManager+HttpBinPostUrlEncoded.swift in Sources */,
 				3FA4C33227C416310003407F /* HttpBinPostJsonRequest+Response.swift in Sources */,
+				9386943B27C613590098059B /* ParseResultDecision.swift in Sources */,
+				9386941127C5E6A60098059B /* HttpBinService.swift in Sources */,
+				9386941727C5E9390098059B /* ApiComponentError.swift in Sources */,
 				3FA4C32F27C416310003407F /* BaseRequest.swift in Sources */,
 				937E801E279FECC300A1AA90 /* ViewController.swift in Sources */,
 				937E801A279FECC300A1AA90 /* AppDelegate.swift in Sources */,
+				9386943127C611000098059B /* HTTPMethodAdapter.swift in Sources */,
+				9386942327C5F8E30098059B /* DecisionAction.swift in Sources */,
 				937E801C279FECC300A1AA90 /* SceneDelegate.swift in Sources */,
+				9386944127C61C0B0098059B /* HttpBinService+HttpBinPostJson.swift in Sources */,
+				9386941B27C5F6420098059B /* Request.swift in Sources */,
+				9386942927C608B40098059B /* PostJsonRequest.swift in Sources */,
+				9386943527C6118C0098059B /* QueryParamsAdapter.swift in Sources */,
+				9386943327C6114B0098059B /* ContentTypeAdapter.swift in Sources */,
+				9386943727C611AF0098059B /* UrlFormBodyParamsAdapter.swift in Sources */,
 				3FA4C33127C416310003407F /* NetworkManager.swift in Sources */,
 				3FA4C32E27C416310003407F /* HttpBinBaseRequest.swift in Sources */,
+				9386942D27C60C4A0098059B /* PathAdapter.swift in Sources */,
 				93B5EFBE27BDE9B900DCD5FA /* URLRequest+AddHeader.swift in Sources */,
 				93B5EFC227BDEA4B00DCD5FA /* APIManager+HttpBinPostJson.swift in Sources */,
+				9386944827C624C00098059B /* HTTPMethod.swift in Sources */,
+				9386942527C5F9520098059B /* DecisionRecord.swift in Sources */,
+				9386941F27C5F7950098059B /* RequestAdapter.swift in Sources */,
+				9386942727C606DF0098059B /* GetRequest.swift in Sources */,
+				9386944427C61E050098059B /* ApiClient.swift in Sources */,
+				9386942127C5F7EC0098059B /* Decision.swift in Sources */,
+				9386942B27C608C20098059B /* PostUrlEncodedRequest.swift in Sources */,
+				9386943F27C61C020098059B /* HttpBinService+HttpBinPostUrlEncoded.swift in Sources */,
+				9386943D27C61BDB0098059B /* HttpBinService+HttpBinGet.swift in Sources */,
 				3FB32B9127BAC33F00B92458 /* APIManager+HttpBinGet.swift in Sources */,
+				9386944627C624AE0098059B /* ContentType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,11 +29,11 @@ class HttpBinPostJsonRequest: HttpBinBaseRequest{
     }
 }
 
-struct HttpBinPostUrlEncodedResponse: Codable{
-    struct Form: Codable{
+struct HttpBinPostJsonResponse: Codable{
+    struct JsonData: Codable{
         let value: String
     }
-    let form: Form
+    let json: JsonData
     let origin: String
     let url: String
 }
