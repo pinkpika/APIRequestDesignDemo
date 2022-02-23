@@ -11,16 +11,14 @@ import Alamofire
 /// Api Client - URLSession
 struct ApiNativeClient: ApiComponentSendable{
     let session: URLSession
-    init(session: URLSession) {
-        self.session = session
-    }
     func sendRequest(request: URLRequest, queue: DispatchQueue, handler: @escaping (Data?, URLResponse?, Error?) -> Void) {
-        session.dataTask(with: request) {
+        let dataTask = session.dataTask(with: request) {
             (data, response, error) in
             queue.async {
                 handler(data, response, error)
             }
         }
+        dataTask.resume()
     }
 }
 

@@ -44,7 +44,7 @@ extension PostJsonRequest {
     /// 預設的決策路徑
     var decisions: [Decision] {
         return [
-            RefreshTokenDecision(),
+            BadStatusCodeDecision(),
             ParseResultDecision()
         ]
     }

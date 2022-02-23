@@ -74,7 +74,7 @@ extension ApiComponentSendable {
                     return "Data Nil.(沒有Data!!)"
                 }
             }()
-            print("📦 [\(Req.self)][StatusCode = \(httpResponse.statusCode)][ReceiveData]: " + dataStr.prefix(100))
+            print("📦 [\(Req.self)][StatusCode = \(httpResponse.statusCode)][ReceiveData]: \(dataStr)")
             
             self.handleDecision(
                 request: request,

@@ -53,6 +53,10 @@ class ViewController: UIViewController {
         button.setTitle("APIRequestDesignVersion3 call apis", for: .normal)
         button.addAction(UIAction(handler: {
             action in
+            let request = HttpBinService.HttpBinGetRequest(foo: "1234")
+            ApiNativeClient(session: .shared).send(request: request, queue: .main) {
+                result in print(result)
+            }
         }), for: .touchUpInside)
         return button
     }()

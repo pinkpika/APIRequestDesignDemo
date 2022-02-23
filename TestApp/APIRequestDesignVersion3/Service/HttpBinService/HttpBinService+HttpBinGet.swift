@@ -12,19 +12,15 @@ extension HttpBinService{
     struct HttpBinGetRequest: GetRequest {
 
         typealias Response = HttpBinGetResponse
-        var setting: RequestBaseSetting
+        var setting: RequestBaseSetting = defaultSetting
         var path: String {
             return "/get"
         }
         var queryParams: [String : String]?{
             return ["foo": foo]
         }
-
+        
         let foo: String
-        init(setting: RequestBaseSetting, foo: String){
-            self.setting = setting
-            self.foo = foo
-        }
     }
 
     struct HttpBinGetResponse: Codable {

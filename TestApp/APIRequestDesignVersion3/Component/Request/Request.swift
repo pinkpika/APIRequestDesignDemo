@@ -11,7 +11,7 @@ import Foundation
 protocol RequestBaseSetting {
     
     /// Domain
-    var domain: String { get set }
+    var domain: String { get }
 }
 
 /// 基底Request

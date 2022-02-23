@@ -12,7 +12,7 @@ extension HttpBinService{
     struct HttpBinPostUrlEncodedRequest: PostUrlEncodedRequest {
 
         typealias Response = HttpBinPostUrlEncodedResponse
-        var setting: RequestBaseSetting
+        var setting: RequestBaseSetting = defaultSetting
         var path: String {
             return "/post"
         }
@@ -21,10 +21,6 @@ extension HttpBinService{
         }
 
         let foo: String
-        init(setting: RequestBaseSetting, foo: String){
-            self.setting = setting
-            self.foo = foo
-        }
     }
 
     struct HttpBinPostUrlEncodedResponse: Codable {
