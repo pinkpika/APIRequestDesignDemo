@@ -45,6 +45,10 @@
 		9386944427C61E050098059B /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386944327C61E050098059B /* ApiClient.swift */; };
 		9386944627C624AE0098059B /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386944527C624AE0098059B /* ContentType.swift */; };
 		9386944827C624C00098059B /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386944727C624C00098059B /* HTTPMethod.swift */; };
+		9386944A27C625200098059B /* NilDataDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386944927C625200098059B /* NilDataDecision.swift */; };
+		9386944C27C626030098059B /* RefreshTokenDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386944B27C626030098059B /* RefreshTokenDecision.swift */; };
+		9386944E27C6298D0098059B /* RetryDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386944D27C6298D0098059B /* RetryDecision.swift */; };
+		9386945027C62C5E0098059B /* BadStatusCodeDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386944F27C62C5E0098059B /* BadStatusCodeDecision.swift */; };
 		939D0E2F27A246E60054157D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 939D0E2E27A246E60054157D /* Alamofire */; };
 		939D202F27C4845900A21D43 /* APIManager+HttpBinPostUrlEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939D202E27C4845900A21D43 /* APIManager+HttpBinPostUrlEncoded.swift */; };
 		939D203127C486B100A21D43 /* HttpBinPostUrlEncodedRequest+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939D203027C486B100A21D43 /* HttpBinPostUrlEncodedRequest+Response.swift */; };
@@ -93,6 +97,10 @@
 		9386944327C61E050098059B /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		9386944527C624AE0098059B /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
 		9386944727C624C00098059B /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		9386944927C625200098059B /* NilDataDecision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NilDataDecision.swift; sourceTree = "<group>"; };
+		9386944B27C626030098059B /* RefreshTokenDecision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenDecision.swift; sourceTree = "<group>"; };
+		9386944D27C6298D0098059B /* RetryDecision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryDecision.swift; sourceTree = "<group>"; };
+		9386944F27C62C5E0098059B /* BadStatusCodeDecision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadStatusCodeDecision.swift; sourceTree = "<group>"; };
 		939D202E27C4845900A21D43 /* APIManager+HttpBinPostUrlEncoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIManager+HttpBinPostUrlEncoded.swift"; sourceTree = "<group>"; };
 		939D203027C486B100A21D43 /* HttpBinPostUrlEncodedRequest+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpBinPostUrlEncodedRequest+Response.swift"; sourceTree = "<group>"; };
 		93B5EFBD27BDE9B900DCD5FA /* URLRequest+AddHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+AddHeader.swift"; sourceTree = "<group>"; };
@@ -244,7 +252,11 @@
 				9386942027C5F7EC0098059B /* Decision.swift */,
 				9386942227C5F8E30098059B /* DecisionAction.swift */,
 				9386942427C5F9520098059B /* DecisionRecord.swift */,
+				9386944B27C626030098059B /* RefreshTokenDecision.swift */,
+				9386944D27C6298D0098059B /* RetryDecision.swift */,
+				9386944F27C62C5E0098059B /* BadStatusCodeDecision.swift */,
 				9386943A27C613590098059B /* ParseResultDecision.swift */,
+				9386944927C625200098059B /* NilDataDecision.swift */,
 			);
 			path = Decision;
 			sourceTree = "<group>";
@@ -358,9 +370,13 @@
 				9386942527C5F9520098059B /* DecisionRecord.swift in Sources */,
 				9386941F27C5F7950098059B /* RequestAdapter.swift in Sources */,
 				9386942727C606DF0098059B /* GetRequest.swift in Sources */,
+				9386944E27C6298D0098059B /* RetryDecision.swift in Sources */,
+				9386944C27C626030098059B /* RefreshTokenDecision.swift in Sources */,
 				9386944427C61E050098059B /* ApiClient.swift in Sources */,
 				9386942127C5F7EC0098059B /* Decision.swift in Sources */,
+				9386945027C62C5E0098059B /* BadStatusCodeDecision.swift in Sources */,
 				9386942B27C608C20098059B /* PostUrlEncodedRequest.swift in Sources */,
+				9386944A27C625200098059B /* NilDataDecision.swift in Sources */,
 				9386943F27C61C020098059B /* HttpBinService+HttpBinPostUrlEncoded.swift in Sources */,
 				9386943D27C61BDB0098059B /* HttpBinService+HttpBinGet.swift in Sources */,
 				3FB32B9127BAC33F00B92458 /* APIManager+HttpBinGet.swift in Sources */,

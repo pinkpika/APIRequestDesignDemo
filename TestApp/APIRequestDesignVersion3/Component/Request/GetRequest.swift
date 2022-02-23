@@ -36,6 +36,7 @@ extension GetRequest {
     /// 預設的決策路徑
     var decisions: [Decision] {
         return [
+            BadStatusCodeDecision(),
             ParseResultDecision()
         ]
     }

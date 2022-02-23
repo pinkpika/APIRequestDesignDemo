@@ -13,5 +13,6 @@ enum ApiComponentError: Error {
     case nilData
     case nonHTTPResponse
     case apiFailure(data: Data?, response: URLResponse?, error: Error?)
+    case badStatusCode(data: Data?, statusCode: Int)
     case decodeFailure(data: Data?, error: Error?)
 }

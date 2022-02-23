@@ -44,6 +44,7 @@ extension PostUrlEncodedRequest {
     /// 預設的決策路徑
     var decisions: [Decision] {
         return [
+            BadStatusCodeDecision(),
             ParseResultDecision()
         ]
     }
