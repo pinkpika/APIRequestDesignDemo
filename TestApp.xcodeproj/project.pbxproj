@@ -49,6 +49,7 @@
 		9386944C27C626030098059B /* RefreshTokenDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386944B27C626030098059B /* RefreshTokenDecision.swift */; };
 		9386944E27C6298D0098059B /* RetryDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386944D27C6298D0098059B /* RetryDecision.swift */; };
 		9386945027C62C5E0098059B /* BadStatusCodeDecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386944F27C62C5E0098059B /* BadStatusCodeDecision.swift */; };
+		938E1F3627C8BAAF00DBF615 /* HttpBinService+HttpBinCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938E1F3527C8BAAF00DBF615 /* HttpBinService+HttpBinCustom.swift */; };
 		939D0E2F27A246E60054157D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 939D0E2E27A246E60054157D /* Alamofire */; };
 		939D202F27C4845900A21D43 /* APIManager+HttpBinPostUrlEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939D202E27C4845900A21D43 /* APIManager+HttpBinPostUrlEncoded.swift */; };
 		939D203127C486B100A21D43 /* HttpBinPostUrlEncodedRequest+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939D203027C486B100A21D43 /* HttpBinPostUrlEncodedRequest+Response.swift */; };
@@ -101,6 +102,7 @@
 		9386944B27C626030098059B /* RefreshTokenDecision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenDecision.swift; sourceTree = "<group>"; };
 		9386944D27C6298D0098059B /* RetryDecision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryDecision.swift; sourceTree = "<group>"; };
 		9386944F27C62C5E0098059B /* BadStatusCodeDecision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadStatusCodeDecision.swift; sourceTree = "<group>"; };
+		938E1F3527C8BAAF00DBF615 /* HttpBinService+HttpBinCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpBinService+HttpBinCustom.swift"; sourceTree = "<group>"; };
 		939D202E27C4845900A21D43 /* APIManager+HttpBinPostUrlEncoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIManager+HttpBinPostUrlEncoded.swift"; sourceTree = "<group>"; };
 		939D203027C486B100A21D43 /* HttpBinPostUrlEncodedRequest+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HttpBinPostUrlEncodedRequest+Response.swift"; sourceTree = "<group>"; };
 		93B5EFBD27BDE9B900DCD5FA /* URLRequest+AddHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+AddHeader.swift"; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				9386943C27C61BDB0098059B /* HttpBinService+HttpBinGet.swift */,
 				9386943E27C61C020098059B /* HttpBinService+HttpBinPostUrlEncoded.swift */,
 				9386944027C61C0B0098059B /* HttpBinService+HttpBinPostJson.swift */,
+				938E1F3527C8BAAF00DBF615 /* HttpBinService+HttpBinCustom.swift */,
 			);
 			path = HttpBinService;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				9386942727C606DF0098059B /* GetRequest.swift in Sources */,
 				9386944E27C6298D0098059B /* RetryDecision.swift in Sources */,
 				9386944C27C626030098059B /* RefreshTokenDecision.swift in Sources */,
+				938E1F3627C8BAAF00DBF615 /* HttpBinService+HttpBinCustom.swift in Sources */,
 				9386944427C61E050098059B /* ApiClient.swift in Sources */,
 				9386942127C5F7EC0098059B /* Decision.swift in Sources */,
 				9386945027C62C5E0098059B /* BadStatusCodeDecision.swift in Sources */,

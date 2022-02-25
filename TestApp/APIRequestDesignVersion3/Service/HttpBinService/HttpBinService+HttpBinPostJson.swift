@@ -25,7 +25,7 @@ extension HttpBinService{
 
     struct HttpBinPostJsonResponse: Codable {
         struct JsonData: Codable{
-            let value: String
+            let foo: String
         }
         let json: JsonData
     }

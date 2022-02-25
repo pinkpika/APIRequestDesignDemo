@@ -20,7 +20,7 @@ protocol GetRequest: Request {
 /// 基底Request - Get
 extension GetRequest {
     
-     var method: HTTPMethod {
+    var method: HTTPMethod {
         return .get
     }
     
